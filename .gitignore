@@ -1,0 +1,8 @@
+*  #ignore all files  
+/ER2.1/*
+	#except
+
+
+!/ER2.1/*.asm
+!.gitignore
+
