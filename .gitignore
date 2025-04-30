@@ -1,8 +1,15 @@
-* #ignore all files  
-/ER2.1/*
-	#except
 
+*.txt
+/ER2.1/*
+/ER2.?/*
+/ER2.??/*
+/ER2.???/*
+/ER2.????/*
 
 !/ER2.1/*.asm
+!/ER2.?/*.asm
+!/ER2.??/*.asm
+!/ER2.???/*.asm
+!/ER2.????/*.asm
 !.gitignore
 

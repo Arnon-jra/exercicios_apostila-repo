@@ -9,6 +9,119 @@
                 "name": "ER2.1",
                 "resourceId": "/ER2.1"
             }
+        },
+        {
+            "name": "ER2.2",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "ER2.2",
+                "resourceId": "/ER2.2"
+            }
+        },
+        {
+            "name": "ER2.3",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "ER2.3",
+                "resourceId": "/ER2.3"
+            }
+        },
+        {
+            "name": "ER2.4",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "ER2.4",
+                "resourceId": "/ER2.4"
+            }
+        },
+        {
+            "name": "ER2.5",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "ER2.5",
+                "resourceId": "/ER2.5"
+            }
+        },
+        {
+            "name": "ER2.7",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "ER2.7",
+                "resourceId": "/ER2.7"
+            },
+            "debuggerSettings": {
+                "targetConfigs/MSP430F5529.ccxml": {
+                    "TI MSP430 USB1/MSP430": {
+                        "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues/>\n"
+                    }
+                }
+            }
+        },
+        {
+            "name": "ER2.6",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "ER2.6",
+                "resourceId": "/ER2.6"
+            },
+            "debuggerSettings": {
+                "targetConfigs/MSP430F5529.ccxml": {
+                    "TI MSP430 USB1/MSP430": {
+                        "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues/>\n"
+                    }
+                }
+            }
+        },
+        {
+            "name": "ER2.7_V2",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "ER2.7_V2",
+                "resourceId": "/ER2.7_V2"
+            }
+        },
+        {
+            "name": "ER2.8",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "ER2.8",
+                "resourceId": "/ER2.8"
+            }
+        },
+        {
+            "name": "ER2.9",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "ER2.9",
+                "resourceId": "/ER2.9"
+            }
+        },
+        {
+            "name": "ER2.10",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "ER2.10",
+                "resourceId": "/ER2.10"
+            }
+        },
+        {
+            "name": "ER2.11",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "ER2.11",
+                "resourceId": "/ER2.11"
+            }
         }
     ]
 }

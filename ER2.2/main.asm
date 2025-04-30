@@ -7,7 +7,7 @@
   .text
 
 main:
-  ;WDTCTL = WDTPW+WDTHOLD;                   // Stop WDT
+  ;WDTCTL = WDTPW+WDTHOLD;                   // Stop WDT //
 
   mov.w #0x1234, R5
   mov.w #0x4321, R6

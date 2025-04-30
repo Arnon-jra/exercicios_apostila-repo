@@ -16,7 +16,5 @@ main:
     jmp $
     nop
 
-    dsdfads
-
 
 
