@@ -1,14 +1,14 @@
-  ;Escreva a sub-rotina MAIOR8, que armazena em R10 o maior elemento de um
-  ;vetor com números de 8 bits sem sinal, cujo endereço está em R5.
+  ;ER2.13 - Escreva a sub-rotina MENOR8, que armazena em R10 o menor elemento de um
+  ;vetor com números de 8 bits com sinal, cujo endereço está em R5.
   
   .cdecls "msp430.h"
   .global main
   .text
 
 main:
-  ;Sub-rotina maior8:
-  ;R6: qtde de n a serem somados (decrementa a cada soma)
-  ;R10: resultado
+  ;Sub-rotina menor8:
+  ;R6: numero de elem. do vetor
+  ;R10: guarda menor valor
   ;Recursos a serem usados pela sub-rotina:
   ;R5: end que aponta para inicio dos dados
   ;R6
@@ -16,20 +16,20 @@ main:
   ;
   
   mov.w #WDTPW|WDTHOLD,&WDTCTL
-     ;recebe qtde de words a serem somadas
-  call #maior8
+
+  call #menor8
   jmp $
   nop
 
-maior8: 
+menor8: 
   clr R10
-  mov.w #vetor1, R5
+  mov.w #vetor3, R5
   mov.b @R5+, R6
   mov.b @R5+, R10
   dec.w R6
 loop:
   cmp.b @R5+, R10
-  jhs salto     ;compara numeros sem sinal, 1 se maior ou igual
+  jl salto
   mov.b -1(R5), R10
 salto:
   dec.w R6 ;decrementa a word de UM
