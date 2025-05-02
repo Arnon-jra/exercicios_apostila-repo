@@ -130,8 +130,6 @@
             "projectInfo": {
                 "name": "ER2.12",
                 "resourceId": "/ER2.12"
-<<<<<<< HEAD
-=======
             },
             "debuggerSettings": {
                 "targetConfigs/MSP430F5529.ccxml": {
@@ -166,7 +164,15 @@
             "projectInfo": {
                 "name": "ER2.15",
                 "resourceId": "/ER2.15"
->>>>>>> origin/main
+            }
+        },
+        {
+            "name": "ER2.16",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "ER2.16",
+                "resourceId": "/ER2.16"
             }
         }
     ]

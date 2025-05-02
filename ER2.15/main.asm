@@ -10,7 +10,7 @@
 
 main:
   mov.w #WDTPW|WDTHOLD,&WDTCTL
-  mov.w #0x08, R6
+  mov.w #0x0A, R6
   call #fibn
   jmp $
   nop
