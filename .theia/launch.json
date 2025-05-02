@@ -122,6 +122,15 @@
                 "name": "ER2.11",
                 "resourceId": "/ER2.11"
             }
+        },
+        {
+            "name": "ER2.12",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "ER2.12",
+                "resourceId": "/ER2.12"
+            }
         }
     ]
 }

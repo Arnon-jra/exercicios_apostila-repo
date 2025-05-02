@@ -8,7 +8,7 @@
 main:
   ;Sub-rotina maior8:
   ;R6: qtde de n a serem somados (decrementa a cada soma)
-  ;R10: resultado
+  ;R10: maior elemento
   ;Recursos a serem usados pela sub-rotina:
   ;R5: end que aponta para inicio dos dados
   ;R6
@@ -16,23 +16,29 @@ main:
   ;
   
   mov.w #WDTPW|WDTHOLD,&WDTCTL
-  mov.w &vetor4, R6   ;recebe qtde de words a serem somadas
-  call #sum16
+    
+  call #maior8
   jmp $
   nop
 
-sum16: 
+maior8: 
   clr R10
-  mov.w #vetor4+2, R5
-loop_soma 
-  add.w @R5+, R10  
+  mov.w #vetor, R5
+  mov.b @R5+, R6
+  mov.b @R5+, R10
+  dec.w R6
+loop_maior8:
+  mov.b @R5+, R11
+  cmp R11, R10 
+  jge salto   ;TODO: jhs? tanto faz?
+  mov.b R11, R10
+salto:
   dec.w R6 ;decrementa a word de UM
-  jnz loop_soma
+  jnz loop_maior8
   ret
 
   .data
   .retain
-vetor1: .word 0x05, 0x04, 0x07, 0x03, 0x09, 0x02
-vetor2: .word 7, 1, 2, 3, 4, 5, 6, 7
-vetor3: .word 10, 1, 2, 3, 4, 5, 5, -4, -3, -2, -1
-vetor4: .word 6, 1234, 4567, 3, 5, -7654, 0
+vetor: .byte 0x05, 0x04, 0x07, 0x03, 0x09, 0x02
+
+akadka
