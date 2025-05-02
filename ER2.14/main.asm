@@ -13,6 +13,7 @@ main:
   jmp $
   nop
 
+; TODO: corrigir exercicio (preencher vetor invertido utilizando endereço do vetor original)
 inv8: 
   mov.w #vetor0, R5
   mov.b @R5, R6  ;tamanho do vetor
