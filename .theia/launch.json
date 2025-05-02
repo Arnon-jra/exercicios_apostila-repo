@@ -130,6 +130,43 @@
             "projectInfo": {
                 "name": "ER2.12",
                 "resourceId": "/ER2.12"
+<<<<<<< HEAD
+=======
+            },
+            "debuggerSettings": {
+                "targetConfigs/MSP430F5529.ccxml": {
+                    "TI MSP430 USB1/MSP430": {
+                        "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues/>\n"
+                    }
+                }
+            }
+        },
+        {
+            "name": "ER2.13",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "ER2.13",
+                "resourceId": "/ER2.13"
+            }
+        },
+        {
+            "name": "ER2.14",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "ER2.14",
+                "resourceId": "/ER2.14"
+            }
+        },
+        {
+            "name": "ER2.15",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "ER2.15",
+                "resourceId": "/ER2.15"
+>>>>>>> origin/main
             }
         }
     ]
